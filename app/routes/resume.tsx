@@ -45,13 +45,15 @@ const EXPERIENCE = [
 
 export default function Resume() {
   return (
-    <>
+    <div className="overflow-hidden">
       <div className="font-sans pt-32 p-4 max-w-6xl mx-auto pb-20">
         <div className="absolute -z-10 top-0 left-0 right-0 h-[360px] w-full bg-white dark:bg-slate-950 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:32px_32px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)]"></div>
         <div className="relative text-center">
           <div className="absolute -z-10 -top-[400px] -left-20 w-[700px] h-[600px] bg-pink-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 "></div>
           <div className="absolute -z-10 -top-[400px] -right-20 w-[700px] h-[600px] bg-cyan-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 "></div>
-          <h1 className="text-7xl font-extrabold mb-3">James Coates</h1>
+          <h1 className="text-5xl lg:text-7xl font-extrabold mb-3">
+            James Coates
+          </h1>
           <p className="text-xl font-medium text-slate-500">
             Lead Front End Developer{" "}
             <a href="https://mediamaker.co.uk/" className="text-indigo-500">
@@ -235,9 +237,9 @@ export default function Resume() {
         </div>
       </div>
 
-      <div className="text-center text-xs text-slate-500">
+      <div className="text-center text-xs text-slate-500 py-6">
         © {new Date().getFullYear()}
       </div>
-    </>
+    </div>
   );
 }
