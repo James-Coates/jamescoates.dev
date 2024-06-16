@@ -50,11 +50,14 @@ export default function Resume() {
         <div className="absolute -z-10 top-0 left-0 right-0 h-[360px] w-full bg-white dark:bg-slate-950 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:32px_32px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)]"></div>
         <div className="relative text-center">
           <div className="absolute -top-[400px] -left-20 w-[700px] h-[600px] bg-pink-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 "></div>
-          {/* <div className="absolute -top-[500px] -right-4 w-[600px] h-[600px] bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-40 "></div> */}
           <div className="absolute -top-[400px] -right-20 w-[700px] h-[600px] bg-cyan-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 "></div>
           <h1 className="text-7xl font-extrabold mb-3">James Coates</h1>
           <p className="text-xl font-medium text-slate-500">
-            Lead Front End Developer
+            Lead Front End Developer{" "}
+            <a href="https://mediamaker.co.uk/" className="text-indigo-500">
+              @ Mediamaker
+            </a>{" "}
+            (UK Remote)
           </p>
 
           <div className="mt-6 flex justify-center space-x-8">
@@ -71,7 +74,7 @@ export default function Resume() {
           <div className="mt-6 flex justify-center items-center space-x-2">
             <a
               href="https://www.linkedin.com/in/jcoates92/"
-              className="border border-slate-300 dark:border-slate-700 inline-flex items-center rounded-full px-4 py-2 text-sm"
+              className="border border-blue-300 dark:border-blue-700 font-medium text-blue-700 inline-flex items-center rounded-full px-4 py-2 text-sm hover:scale-105 hover:bg-blue-50 duration-300"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -79,8 +82,8 @@ export default function Resume() {
               /james-coates-dev
             </a>
             <a
-              href="https://www.linkedin.com/in/jcoates92/"
-              className="border border-slate-300 dark:border-slate-700  inline-flex items-center rounded-full px-4 py-2 text-sm"
+              href="https://github.com/James-Coates"
+              className="border border-slate-300 dark:border-slate-700 text-slate-700 inline-flex items-center rounded-full px-4 py-2 text-sm hover:scale-105 hover:bg-slate-50 duration-300"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -88,9 +91,9 @@ export default function Resume() {
               /james-coates
             </a>
           </div>
-
-          <div className="h-[1px] bg-slate-200 my-12"></div>
         </div>
+
+        <div className="h-[1px] bg-slate-200 my-12"></div>
 
         <div className="flex">
           <div className="w-full max-w-64">
@@ -136,16 +139,16 @@ export default function Resume() {
                   </div>
                 </div>
 
-                {/* {job.responsibilities && (
-                <ul>
-                  {job.responsibilities.map((responsibility, i) => (
-                    <li key={i} className="flex mb-2">
-                      <span className="bg-slate-200 h-3 w-3 rounded mt-1 me-4"></span>
-                      <div className="flex-1">{responsibility}</div>
-                    </li>
-                  ))}
-                </ul>
-              )} */}
+                {job.responsibilities && (
+                  <ul>
+                    {job.responsibilities.map((responsibility, i) => (
+                      <li key={i} className="flex mb-2">
+                        <span className="bg-slate-200 h-3 w-3 rounded mt-1 me-4"></span>
+                        <div className="flex-1">{responsibility}</div>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </li>
             ))}
           </ol>
